@@ -3,3 +3,4 @@ spacy
 pdfminer.six
 gensim
 numpy
+scikit-learn
