@@ -173,7 +173,7 @@ def upload() :
                 else:
                     return np.zeros(100)
 
-            resume_vector = vectorize_text( cleanResume(listToString(skills) + listToString(education) ) )
+            resume_vector = vectorize_text( cleanResume(listToString(skills)  ) )
 
 
             info = " "
