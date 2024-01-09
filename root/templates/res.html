@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/static/result.css">
+         <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAAClpaWtra2pqand3d3Ly8uhoaH4+PidnZ3V1dVra2uVlZXy8vJZWVmQkJBGRkazs7MuLi66uro8PDzBwcHj4+NLS0sVFRVtbW1DQ0OEhITn5+fS0tJWVlYNDQ1hYWF6enqGhoYZSjklAAAEpElEQVR4nO2cbUPqMAyFHQNBRBGvyvXtqvf//8j7yhxradIlTbt6zkd1J3kEmi7NODuDIAiCIOir6aIpSxfqhLPcSAPNQAhCEGYXCEH4pQlbdesYtQaE+taFpAFCI4GwTOtC0gChkeon7Oqhfll2CWu763cJa9vHgTC/QAhCEOYXCAWEldz1Bwgr2amCMJtAKDACoZFAKDAC4dlVe/n9968fF8LQsYmpGVHW28Pvm60wdmRiakaE9VPzqefdizB8TGJqRmHry+ZY+tMhrDRERkHr12aoe2EC/MTUjILWjw7hrTABfmJqRkHrN4ewuRJmwE5MzShkfeUCNq/CDNiJqRmFrBcewkQfxIIIv9FBFj8813l03dtEZCJ88aR1TsbY8fj+aJebcOVJity8+T68J9WtWwWtpWSI1r3mtLr2Vy5C9wN1R4bYOtcEtMlN6B4ubjx/daxpvYbunuaDDDGpz6GvWtAxprSW3nuSYtwIv77z+N57+6NMhGtPWg/CDNiJqRkFrV3A2u4t3PvDRC9hvnv84apB79nUElMzClsPl35h+JjE1IwI648jwJ/C8DGJqRkR1seb75UwfExiakaUdb/qr4XRoxJTMyKtHzrAVOsoK43xRrR1RyiMHZmYmhEIQaikrKdrHSG7GbyesdRfmnMS7jvCH7wYq+uGqevP+pqPcHHby+iOVS/6B3KEbrITLoana4804zkfsLeTz0K4au98/3aq6R01Gt+dR2YgfHk+mdY2uORMhHB1mu8vYyDENN6lvgbNkd4CJ/o3fMB9ILGkhG7zwtXpJWe1p6/+D5irWrB6um+BKIuWU/DbfmPSlnBYIvzSHa8xJWS25UMvokZiakbuT3ydbp9Ux8BMCbkFTXX0Pevdk4lAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZHMZzF4o3fMqbzyCPmjdwFdx0292xJGDMQEdONNoAjCqKGmgKKerynyHJ9S1LeEgFCVsP53af0rTcToXUD7uGqxPFy3tCDkjt5xp/I4Wi//XbiUPltV7K5NTSCcvkA4fYFw+gJhWh3KukDkdj4vYbc1E4iKkZdw5k8ahCD0xwBhEoEQhIqEY7r6O7pt0cW6nEeat7qEY7v65Bd/drHm5D9jKF3C0b02qn8o+ESoEo7vl1JfG1kK4WY0IRW+FEJBV38ihOPfpU8TIax/pRnd1d95Q5ZIOK6rfx9R8fMTJhIIAwJhIEYWwvhH+adGKBA7BgiTCIQgBKGfB4SaAmFFhPXvaerfl4LQlTZholn9YgiTzeoXQ5hsgrYUwnRT0KUQpptkB6EVYf3vUqWVZs+JnpCwO4Wdu1GTzeqbngEfTtLn3RfOGszqm57ju6rt7gmEIAQhCEE4mjAwaV0JoTMt76/4qQkTVnxXnl1bMlns2gJRK+lEqUa1jAXCNFEtY4EwTVTLWBqE8Sv4+Fh5CKOrMFvL82GsPIQJtR3Gqo5wA8L6CBOechdCKBAIvyKhxvPVlJxqIVA8ocIz8vEV35TQUiAEYfmEGufnuRkgCIIgCMqjX+2kT524opowAAAAAElFTkSuQmCC" type="image/x-icon">
+
+    <title>Parsed resume</title>
+</head>
+<body>
+<div class="container">
+    <div class="item"><strong>Name:</strong> {{ name }}</div>
+    <div class="item"><strong>Education:</strong> {{ education|join(', ') }}</div>
+    <div class="item"><strong>Skills:</strong> {{ skills|join(', ') }}</div>
+    <div class="item"><strong>Contact Number:</strong> {{ contact_number }}</div>
+    <div class="item"><strong>Email:</strong> {{ email }}</div>
+    <div class="item"><strong>Predicted Category of Work : </strong>{{info}}</div>
+    <div class="item"><a href="/">Check another resume</a></div>
+</div>
+
+</body>
+</html>

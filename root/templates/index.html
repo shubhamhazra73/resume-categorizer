@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/app.css">
+    <meta charset="UTF-8">
+     <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX
+     ///8AAAClpaWtra2pqand3d3Ly8uhoaH4+PidnZ3V1dVra2uVlZXy8vJZWVmQkJBGRkazs7MuLi66uro8PDzBwcHj4+NLS0sVFRV
+     tbW1DQ0OEhITn5+fS0tJWVlYNDQ1hYWF6enqGhoYZSjklAAAEpElEQVR4nO2cbUPqMAyFHQNBRBGvyvXtqvf//8j7yhxradIlTbt
+     6zkd1J3kEmi7NODuDIAiCIOir6aIpSxfqhLPcSAPNQAhCEGYXCEH4pQlbdesYtQaE+taFpAFCI4GwTOtC0gChkeon7Oqhfll2CWu
+     763cJa9vHgTC/QAhCEOYXCAWEldz1Bwgr2amCMJtAKDACoZFAKDAC4dlVe/n9968fF8LQsYmpGVHW28Pvm60wdmRiakaE9VPzqef
+     dizB8TGJqRmHry+ZY+tMhrDRERkHr12aoe2EC/MTUjILWjw7hrTABfmJqRkHrN4ewuRJmwE5MzShkfeUCNq/CDNiJqRmFrBcewkQ
+     fxIIIv9FBFj8813l03dtEZCJ88aR1TsbY8fj+aJebcOVJity8+T68J9WtWwWtpWSI1r3mtLr2Vy5C9wN1R4bYOtcEtMlN6B4ubjx
+     /daxpvYbunuaDDDGpz6GvWtAxprSW3nuSYtwIv77z+N57+6NMhGtPWg/CDNiJqRkFrV3A2u4t3PvDRC9hvnv84apB79nUElMzCls
+     Pl35h+JjE1IwI648jwJ/C8DGJqRkR1seb75UwfExiakaUdb/qr4XRoxJTMyKtHzrAVOsoK43xRrR1RyiMHZmYmhEIQaikrKdrHSG
+     7GbyesdRfmnMS7jvCH7wYq+uGqevP+pqPcHHby+iOVS/6B3KEbrITLoana4804zkfsLeTz0K4au98/3aq6R01Gt+dR2YgfHk+mdY
+     2uORMhHB1mu8vYyDENN6lvgbNkd4CJ/o3fMB9ILGkhG7zwtXpJWe1p6/+D5irWrB6um+BKIuWU/DbfmPSlnBYIvzSHa8xJWS25UM
+     vokZiakbuT3ydbp9Ux8BMCbkFTXX0Pevdk4lAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZFAKDACoZF
+     AKDACoZFAKDACoZHMZzF4o3fMqbzyCPmjdwFdx0292xJGDMQEdONNoAjCqKGmgKKerynyHJ9S1LeEgFCVsP53af0rTcToXUD7uGqxPFy3tCDkjt5xp/I4Wi//XbiUPltV7K5NTSCcvkA4fYFw+gJhWh3KukDkdj4vYbc1E4iKkZdw5k8ahCD0xwBhEoEQhIqEY7r6O7pt0cW6nEeat7qEY7v65Bd/drHm5D9jKF3C0b02qn8o+ESoEo7vl1JfG1kK4WY0IRW+FEJBV38ihOPfpU8TIax/pRnd1d95Q5ZIOK6rfx9R8fMTJhIIAwJhIEYWwvhH+adGKBA7BgiTCIQgBKGfB4SaAmFFhPXvaerfl4LQlTZholn9YgiTzeoXQ5hsgrYUwnRT0KUQpptkB6EVYf3vUqWVZs+JnpCwO4Wdu1GTzeqbngEfTtLn3RfOGszqm57ju6rt7gmEIAQhCEE4mjAwaV0JoTMt76/4qQkTVnxXnl1bMlns2gJRK+lEqUa1jAXCNFEtY4EwTVTLWBqE8Sv4+Fh5CKOrMFvL82GsPIQJtR3Gqo5wA8L6CBOechdCKBAIvyKhxvPVlJxqIVA8ocIz8vEV35TQUiAEYfmEGufnuRkgCIIgCMqjX+2kT524opowAAAAAElFTkSuQmCC" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume Parser</title>
+</head>
+<body>
+<div class="container">
+<img src="https://i.ibb.co/kxCmzQB/Whats-App-Image-2024-01-08-at-21-07-15-e9212978.jpg" alt="" border="0">   <h1>Drop your resume below!</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="validateForm();">
+        <input type="file" name="file" id="fileInput">
+        <input type="submit" value="Upload">
+    </form>
+</div>
+</body>
+</html>
+
+<script>
+        function validateForm() {
+            var x = document.querySelector('input[type="file"]');
+
+            if (x.files.length === 0) {
+                alert('Please select a PDF file');
+                return false;
+            }
+            return true;
+        }
+
+</script>
+
