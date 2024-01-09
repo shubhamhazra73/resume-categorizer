@@ -2,7 +2,8 @@ from flask import Flask, redirect, session, url_for, flash, render_template, req
 import os
 import spacy, re
 from pdfminer.high_level import extract_text
-import spacy
+if not spacy.util.is_package("en_core_web_sm"):
+    spacy.cli.download("en_core_web_sm")
 from spacy.matcher import Matcher
 from werkzeug.utils import secure_filename
 from gensim.models import Word2Vec
